@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+JavaScript For Beginners - Learn Basics & Build Interactive Websites | KaranMoreHub
+</title>
+
+
+<meta name="description"
+content="Learn JavaScript basics and understand how to build interactive websites using variables, functions, events and DOM manipulation.">
+
+
+<meta name="keywords"
+content="JavaScript Basics, Learn JavaScript, Web Development, JavaScript Tutorial">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+body{
+
+font-family:Arial,sans-serif;
+
+background:#ffffff;
+
+color:#1e293b;
+
+line-height:1.8;
+
+}
+
+
+.container{
+
+max-width:1100px;
+
+margin:auto;
+
+padding:0 20px;
+
+}
+
+
+
+/* HEADER */
+
+header{
+
+padding:25px 0;
+
+border-bottom:1px solid #e5e7eb;
+
+}
+
+
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+
+
+.logo{
+
+font-size:28px;
+
+font-weight:800;
+
+text-decoration:none;
+
+color:#111827;
+
+}
+
+
+
+.logo span{
+
+color:#2563eb;
+
+}
+
+
+
+.back{
+
+text-decoration:none;
+
+color:#2563eb;
+
+font-weight:600;
+
+}
+
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+padding:90px 0;
+
+text-align:center;
+
+background:
+
+linear-gradient(
+135deg,
+#eff6ff,
+#ffffff
+);
+
+}
+
+
+
+.tag{
+
+display:inline-block;
+
+background:#2563eb;
+
+color:white;
+
+padding:8px 20px;
+
+border-radius:50px;
+
+font-size:14px;
+
+}
+
+
+
+.hero h1{
+
+font-size:52px;
+
+margin:25px 0;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+
+color:#64748b;
+
+max-width:750px;
+
+margin:auto;
+
+}
+
+
+
+
+
+
+
+/* ARTICLE */
+
+
+.article{
+
+padding:80px 0;
+
+}
+
+
+
+.article-box{
+
+max-width:850px;
+
+margin:auto;
+
+}
+
+
+
+.article-box p{
+
+font-size:17px;
+
+color:#475569;
+
+margin-bottom:20px;
+
+}
+
+
+
+.article-box h2{
+
+font-size:32px;
+
+margin:45px 0 15px;
+
+color:#0f172a;
+
+}
+
+
+
+.article-box h3{
+
+font-size:23px;
+
+margin:30px 0 10px;
+
+color:#1d4ed8;
+
+}
+
+
+
+
+
+.code-box{
+
+background:#111827;
+
+color:#ffffff;
+
+padding:20px;
+
+border-radius:15px;
+
+margin:20px 0;
+
+overflow:auto;
+
+font-family:monospace;
+
+}
+
+
+
+
+
+
+.faq{
+
+margin-top:50px;
+
+padding:30px;
+
+background:#f8fafc;
+
+border-radius:20px;
+
+}
+
+
+
+
+.author{
+
+margin-top:40px;
+
+font-weight:700;
+
+color:#2563eb;
+
+}
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+padding:30px 0;
+
+border-top:1px solid #e5e7eb;
+
+text-align:center;
+
+color:#64748b;
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+
+
+.hero p{
+
+font-size:17px;
+
+}
+
+
+
+.article-box h2{
+
+font-size:26px;
+
+}
+
+
+
+.navbar{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+
+<header>
+
+<div class="container navbar">
+
+
+<a href="../index.html" class="logo">
+
+Karan<span>MoreHub</span>
+
+</a>
+
+
+
+
+<a href="../blog.html" class="back">
+
+← Back To Blog
+
+</a>
+
+
+
+</div>
+
+</header>
+
+
+
+
+
+
+
+
+<section class="hero">
+
+
+<div class="container">
+
+
+<span class="tag">
+
+Programming
+
+</span>
+
+
+
+<h1>
+
+JavaScript For Beginners
+
+</h1>
+
+
+
+<p>
+
+Understand JavaScript basics and start
+building interactive websites with modern
+web development techniques.
+
+</p>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="article">
+
+
+<div class="container article-box">
+
+
+
+<p>
+
+JavaScript is one of the most popular
+programming languages used for creating
+interactive and dynamic websites.
+
+</p>
+
+
+
+
+
+<h2>
+
+What Is JavaScript?
+
+</h2>
+
+
+<p>
+
+JavaScript is a programming language that
+allows developers to add functionality,
+animations and interactive features to
+web pages.
+
+</p>
+
+
+
+
+
+
+
+<h2>
+
+Why Learn JavaScript?
+
+</h2>
+
+
+
+<p>
+
+JavaScript is an essential skill for modern
+web developers. It works together with
+HTML and CSS to create complete websites.
+
+</p>
+
+
+
+<ul>
+
+<li>
+Create interactive user interfaces.
+</li>
+
+
+<li>
+Build web applications.
+</li>
+
+
+<li>
+Develop frontend and backend projects.
+</li>
+
+
+<li>
+Create animations and dynamic content.
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+<h2>
+
+JavaScript Basics
+
+</h2>
+
+
+
+
+
+<h3>
+
+1. Variables
+
+</h3>
+
+
+<p>
+
+Variables are used to store data values
+in JavaScript.
+
+</p>
+
+
+
+<div class="code-box">
+
+let name = "Karan";<br>
+let age = 19;
+
+</div>
+
+
+
+
+
+
+<h3>
+
+2. Functions
+
+</h3>
+
+
+<p>
+
+Functions are reusable blocks of code that
+perform specific tasks.
+
+</p>
+
+
+
+<div class="code-box">
+
+function greet(){<br>
+
+console.log("Hello World");<br>
+
+}
+
+</div>
+
+
+
+
+
+
+
+<h3>
+
+3. Events
+
+</h3>
+
+
+<p>
+
+Events allow websites to respond to user
+actions like clicks, typing and scrolling.
+
+</p>
+
+
+
+
+
+
+
+<h3>
+
+4. DOM Manipulation
+
+</h3>
+
+
+<p>
+
+The Document Object Model allows JavaScript
+to change HTML elements dynamically.
+
+</p>
+
+
+
+
+
+
+<h2>
+
+Building Interactive Websites
+
+</h2>
+
+
+<p>
+
+With JavaScript, developers can create
+features like image sliders, calculators,
+forms, games and web applications.
+
+</p>
+
+
+
+
+
+
+
+<h2>
+
+JavaScript Learning Path
+
+</h2>
+
+
+
+<ul>
+
+<li>
+Learn HTML and CSS basics.
+</li>
+
+
+<li>
+Understand JavaScript fundamentals.
+</li>
+
+
+<li>
+Practice DOM manipulation.
+</li>
+
+
+<li>
+Learn modern frameworks like React.
+</li>
+
+
+<li>
+Build real-world projects.
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+<h2>
+
+Future Of JavaScript
+
+</h2>
+
+
+<p>
+
+JavaScript continues to grow with modern
+frameworks and technologies. It remains one
+of the best languages for web development.
+
+</p>
+
+
+
+
+
+
+
+
+<div class="faq">
+
+
+<h2>
+
+Frequently Asked Questions
+
+</h2>
+
+
+
+
+<h3>
+
+Is JavaScript difficult for beginners?
+
+</h3>
+
+
+<p>
+
+JavaScript may seem challenging initially,
+but regular practice makes it easier to learn.
+
+</p>
+
+
+
+
+
+<h3>
+
+Can I get a job after learning JavaScript?
+
+</h3>
+
+
+<p>
+
+Yes, JavaScript skills are required for many
+frontend and full-stack development roles.
+
+</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="author">
+
+✍ Written by KaranMoreHub Team
+
+</div>
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+<div class="container">
+
+© 2026 KaranMoreHub. All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+
+</body>
+
+</html>
